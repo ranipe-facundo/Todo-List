@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <title>Tareas</title>
+    </head>
+    <body>
+        <section class="todo"> <!--Divide entre secciones / el class="todo" sirve para referenciar esta seccion cuando vaya  adarle forma-->
+            <h2>Lista de tareas</h2><!--titulo para nuestro input-->
+            <div class="input"><!--Sirve para crear cajas o logoca en el codigo-->
+                <input 
+                    type="text" 
+                    class="input-field" 
+                    id="todoInput" 
+                    placeholder="Ingrese una tarea"
+                    /><!--un input para poner informacion en la pagina-->
+                    <button class = "btn">Añadir</button>
+                </div>
+                <ul class= "scroll"> <!--unordered list / Lista desordenada-->
+                    <li id="todoList"></li>
+                </ul>
+            <div>
+                <hr class="counter"> <!-- linea divisora-->
+                <div class = "counter-conteiner">
+                    <p><span>0</span> Total de elementos</p>
+                    <button id="deleteButton">Borrar todo</button>
+                </div>
+            </div>
+        </section> 
+        <footer> <!-- Pie de pagina-->
+            <div clas="footer" para>
+                <p class="made-by"> Hecho por</p>
+                <p class="author"> Facundo Rañipe</p>
+            </div>
+        </footer>
+    </body>
+</html>
