@@ -175,6 +175,34 @@ input[type="checkbox"]::before::after{
     font-weight: bold;
 }
 
+/* Solucion de chat gpt para ocultar las flecas del scrollbar */
+/* Funciona de momento, hay que ver con el script */
+
+.scroll {
+    height: 15rem;
+    overflow: auto; /* Permite el desplazamiento solo cuando hay desbordamiento */
+    scrollbar-width: none; /* Oculta en Firefox */
+}
+
+.scroll::-webkit-scrollbar {
+    width: 0; /* Oculta el scrollbar en navegadores basados en WebKit */
+}
+
+.scroll.has-overflow::-webkit-scrollbar {
+    width: 0.6rem; /* Muestra la barra de desplazamiento si hay overflow */
+}
+
+.scroll::-webkit-scrollbar-thumb {
+    background-color: var(--blue);
+    border-radius: 0.6rem;
+}
+
+.scroll::-webkit-scrollbar-track {
+    display: none;
+}
+
+/* desde el video
+
 .scroll{
     height: 15rem;
     scrollbar-width: thin;
@@ -186,10 +214,9 @@ input[type="checkbox"]::before::after{
 
 .scroll::-webkit-scrollbar-thumb{
     background-color: var(--blue);
-    border-radius: 0.5rem;
+    border-radius: 0.6rem;
 }
 
 .scroll::-webkit-scrollbar-track{
     display: none;
-}
-
+} */
