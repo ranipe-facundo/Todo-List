@@ -6,6 +6,8 @@ const todoList = document.getElementById("todoList");
 const todoCist = document.getElementById("todoCount");
 const addButton = document.querySelector(".btn");
 const deleteButton = document.getElementById("deleteButton")
+//facu 
+//tec
 
 // Inicializar proyecto //queda al pendiente de evemntos que sucedan, queda "Escuchando" los posibles eventos
 document.addEventListener("DOMContentLoaded",function(){
