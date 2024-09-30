@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <script src="./scrip.js" defer></script>
+        <title>Tareas</title>
         <!-- fuente -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./style.css">
-        <script src="./scrip.js"></script>
-        <title>Tareas</title>
     </head>
     <body>
         <section class="todo"> <!--Divide entre secciones / el class="todo" sirve para referenciar esta seccion cuando vaya  adarle forma-->
@@ -20,7 +19,7 @@
                     type="text" 
                     class="input-field" 
                     id="todoInput" 
-                    placeholder="Ingrese una tarea"
+                    placeholder="Nueva tarea"
                     /><!--un input para poner informacion en la pagina-->
                     <button class = "btn">Añadir</button>
                 </div>
@@ -30,7 +29,7 @@
             <div>
                 <hr class="counter"> <!-- linea divisora-->
                 <div class = "counter-conteiner">
-                    <p><span>0</span> Total de elementos</p>
+                    <p><span>0</span> elementos</p>
                     <button id="deleteButton">Borrar todo</button>
                 </div>
             </div>
