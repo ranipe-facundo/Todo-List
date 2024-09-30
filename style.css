@@ -158,5 +158,38 @@ input[type="checkbox"]::before::after{
     gap: 1.8rem;
     background-color: var(--white);
     padding: 1.2rem;
+    border-radius: 0.5rem; box-shadow: 0 1rem 3rem 1rem rgba(0, 23, 71, 0.15);
+}
+
+.made-by,
+.author{
+    font-size: 0.9rem;
+}
+
+.made-by{
+    color: var(--grey-dark)
+}
+
+.author{
+    color: var(--blue);
+    font-weight: bold;
+}
+
+.scroll{
+    height: 15rem;
+    scrollbar-width: thin;
+}
+
+.scroll::-webkit-scrollbar{
+    width: 0.6;
+}
+
+.scroll::-webkit-scrollbar-thumb{
+    background-color: var(--blue);
     border-radius: 0.5rem;
 }
+
+.scroll::-webkit-scrollbar-track{
+    display: none;
+}
+
